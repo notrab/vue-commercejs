@@ -23,7 +23,7 @@ To enable the debugger you can include the third argument `true`.
 ```js
 import VueCommercejs from "vue-commercejs";
 
-Vue.use(VueCommercejs, "PUBLIC_KEY");
+Vue.use(VueCommercejs, "PUBLIC_KEY", true);
 ```
 
 ## Usage
