@@ -18,6 +18,7 @@
     "@chec/commerce.js": ">=2.2.x",
     "vue": ">=1.x.x"
   },
+  "scripts": {},
   "release": {
     "branches": [
       {
