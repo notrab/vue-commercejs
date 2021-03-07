@@ -17,28 +17,5 @@
   "peerDependencies": {
     "@chec/commerce.js": ">=2.2.x",
     "vue": ">=1.x.x"
-  },
-  "scripts": {},
-  "release": {
-    "branches": [
-      {
-        "name": "main"
-      },
-      {
-        "name": "beta",
-        "prerelease": true
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/npm",
-        {
-          "pkgRoot": "vue-commercejs"
-        }
-      ],
-      "@semantic-release/github"
-    ]
   }
 }
