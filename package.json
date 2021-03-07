@@ -1,0 +1,43 @@
+{
+  "name": "vue-commercejs",
+  "version": "0.0.0-semantic-release",
+  "description": "A small prototype wrapper for working with Commerce.js and Vue.",
+  "author": "Jamie Barton <jamie@notrab.dev> (https://notrab.dev)",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "notrab/vue-commercejs",
+  "keywords": [
+    "plugin",
+    "adapter",
+    "wrapper",
+    "vue",
+    "commerce",
+    "chec"
+  ],
+  "peerDependencies": {
+    "@chec/commerce.js": ">=2.2.x",
+    "vue": ">=1.x.x"
+  },
+  "release": {
+    "branches": [
+      {
+        "name": "main"
+      },
+      {
+        "name": "beta",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "pkgRoot": "vue-commercejs"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  }
+}
